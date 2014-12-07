@@ -1,7 +1,7 @@
 #webpack
 Module bundler (many modules `=>`single file.js)
 
-* assuming you have `package.json`, install and auto-save to its dependency list
+* assuming you have `package.json`, install and auto-save to its dependencies list
 ```
 $ npm install webpack --save
 ```
