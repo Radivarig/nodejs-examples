@@ -2,7 +2,7 @@
 Module bundler (many modules `=>`single file.js)
 
 ```
-$ npm install webpack
+$ npm install webpack --save
 ```
 
 
@@ -47,3 +47,25 @@ $ npm start test
     * open index.html
     * open, edit and save entry.js
     * refresh index.html
+
+###loaders
+
+
+* add to `webpack.config.js`
+```
+,module: {
+	loaders: [
+		{ test: /\.css$/, loader: "style!css" }
+	]
+}
+```
+* install loaders over `npm` and save to `package.json`
+```
+$ npm install style-loader css-loader --save 
+```
+
+* now you can add to `entry.js`
+
+```
+require('your.css')
+```
