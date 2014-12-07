@@ -1,0 +1,11 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "test": "./node_modules/webpack/bin/webpack.js --progress --colors --watch"
+  },
+  "author": "",
+  "license": "MIT"
+}
