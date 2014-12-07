@@ -1,6 +1,7 @@
 #webpack
 Module bundler (many modules `=>`single file.js)
 
+* assuming you have `package.json`, install and auto-save to its dependency list
 ```
 $ npm install webpack --save
 ```
@@ -16,8 +17,8 @@ module.exports = {
     }
 }
 ```
-    * only **entry.js** module is executed on startup
-    * **bundle.js** will contain all dependency modules that were required in entry.js
+only **entry.js** module is executed on startup
+**bundle.js** will contain all dependency modules that were required in entry.js
 
 * create `index.html` which is the main .html
 ```
@@ -25,28 +26,26 @@ module.exports = {
     <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
 </body></html>
 ```
-    * only script we have to include is bundle.js
+ only script we have to include is *bundle.js*
+
 * create `entry.js`
 ```
 document.write("webpack watches this file in realtime and recompiles on change")
 ```
 
-* create `package.json`, defaults will do
-```
-$ npm init
-```
-add item scripts to it
+* add item scripts to `package.json`
 ```
 "scripts": { "test": "./node_modules/webpack/bin/webpack.js --progress --colors --watch" }
 ```
-    *`--watch` watches for entry.js and its dependency files, recompiles if they change
+`--watch` watches for entry.js and its dependency files, recompiles if they change
+
 * run webpack
 ```
 $ npm start test
 ```
-    * open index.html
-    * open, edit and save entry.js
-    * refresh index.html
+* open index.html
+* open, edit and save entry.js
+* refresh index.html
 
 ###loaders
 
@@ -64,7 +63,7 @@ $ npm start test
 $ npm install style-loader css-loader --save 
 ```
 
-* now you can add to `entry.js`
+* add to `entry.js`
 
 ```
 require('your.css')
