@@ -1,0 +1,18 @@
+{
+  "name": "webpack-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "scripts": {
+    "test": "./node_modules/webpack/bin/webpack.js --progress --colors --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^0.9.0",
+    "jsx-loader": "^0.12.2",
+    "react": "^0.12.1",
+    "style-loader": "^0.8.2",
+    "webpack": "^1.4.13"
+  }
+}
