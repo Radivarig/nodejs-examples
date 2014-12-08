@@ -1,7 +1,7 @@
 # Short guide for understanding stuff
-* [npm] (nodejs package manager)
-* [webpack] (module bundler)
-* [react] (UI library)
+* [npm][npm] (nodejs package manager)
+* [webpack][webpack] (module bundler)
+* [react][react] (UI library)
 	* jsx (xml-alike js)
 
 [npm]: https://github.com/Radivarig/nodejs-examples/blob/master/npm-intro.md
